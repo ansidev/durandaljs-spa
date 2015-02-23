@@ -41,9 +41,8 @@ define(function (require) {
             for(var i = 0; i < this._movies.length; i++) {
                 if(this._movies[i].id == id) {
                     return this._movies[i];
-                    break;
                 }
             }
         }
-    }
+    };
 });
