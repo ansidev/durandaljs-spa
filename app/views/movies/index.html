@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>
+       All Movies
+       <a class="btn btn-success" data-bind="attr: { href: '#movies/add' }">Add new</a>
+
+    </h2>
+        <div class="row" data-bind="foreach: movies">
+           <div class="col-md-4">
+                <p data-bind="text: 'Title: ' + title"></p>
+                <p data-bind="text: 'Director: ' + director"></p>
+                <!--        <li data-bind="text: actors"></li>-->
+                <p data-bind="text: 'Year: ' + year"></li>
+                <p data-bind="text: 'Rating: ' + rating"></p>
+                <p data-bind="text: 'Description: ' + description"></p>
+                <p>
+                    <a class="btn btn-primary" data-bind="attr: { href: '#movies/details/' + id }">Details</a>
+                    <a class="btn btn-success" data-bind="attr: { href: '#movies/edit/' + id }">Edit</a>
+                </p>
+            </div>
+        </div>
+</div>
