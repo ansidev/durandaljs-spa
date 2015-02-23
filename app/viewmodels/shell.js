@@ -10,10 +10,10 @@ define(['plugins/router', 'durandal/app'], function (router, app) {
             router.map([
                 { route: '', title:'Home', moduleId: 'viewmodels/welcome', nav: true },
 //                { route: 'welcome', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
-                { route: 'sign-up', title:'Sign up', moduleId: 'viewmodels/signup', nav: true }
+                { route: 'sign-up', title:'Sign up', moduleId: 'viewmodels/signup', nav: true },
 //                { route: 'Sign up', moduleId: 'viewmodels/signup', nav: true }
 //                { route: 'Login', moduleId: 'viewmodels/login', nav: true }
-//                { route: 'index', moduleId: 'viewmodels/index', nav: true }
+                { route: 'movies/index', title:'Movies', moduleId: 'viewmodels/movies/index', nav: true }
 //                { route: 'add', moduleId: 'viewmodels/add', nav: true },
 //                { route: 'edit', moduleId: 'viewmodels/edit', nav: true }
             ]).buildNavigationModel();
