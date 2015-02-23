@@ -1,0 +1,44 @@
+<section>
+    <h1 data-bind="text: pageTitle"></h1>
+    <hr>
+    <div class="col-md-6">
+        <form action="" role="form" class="form-horizontal" data-bind="submit: addMovie">
+            <div class="form-group">
+                <label for="title" class="col-md-4 control-label">Title</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" id="title" data-bind="value: movieToAdd.title" placeholder="Enter title of the movie" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="director" class="col-md-4 control-label">Director</label>
+                <div class="col-md-8">
+                    <input type="text" class="form-control" id="director" data-bind="value: movieToAdd.director" placeholder="Enter directors of the movie, seperate by ','" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="year" class="col-md-4 control-label">Year</label>
+                <div class="col-md-8">
+                    <input type="number" class="form-control" id="year" min="1870" data-bind="value: movieToAdd.year" placeholder="Enter year of the movie" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="rating" class="col-md-4 control-label">Rating</label>
+                <div class="col-md-8">
+                    <input type="number" class="form-control" id="rating" min="0" max="10" step="any" data-bind="value: movieToAdd.rating" placeholder="Enter rating of the movie" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="description" class="col-md-4 control-label">Description</label>
+                <div class="col-md-8">
+                    <textarea class="form-control" rows="5" id="description" min="1870" data-bind="value: movieToAdd.description" placeholder="Enter description of the movie" required></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-md-offset-4 col-md-8">
+                    <button type="submit" class="btn btn-primary">Add</button>
+                    <a class="btn btn-danger" href="#movies/index">Cancel</a>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>

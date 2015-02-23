@@ -1,0 +1,21 @@
+<div class="container">
+    <h2>
+       All Movies
+       <a class="btn btn-success" data-bind="attr: { href: '#movies/add' }">Add new</a>
+
+    </h2>
+        <div class="row">
+           <div class="col-md-6 col-md-offset-3">
+               <p><strong>Title: </strong><span data-bind="text: movieToShow.title"></span></p>
+               <p><strong>Director: </strong><span data-bind="text: movieToShow.director"></span></p>
+                <!--        <li data-bind="text: actors"></li>-->
+                <p><strong>Year: </strong><span data-bind="text: movieToShow.year"></li>
+                <p><strong>Rating: </strong><span data-bind="text: movieToShow.rating"></p>
+                <p><strong>Description: </strong><span data-bind="text: movieToShow.description"></p>
+                <p>
+<!--                    <a class="btn btn-success" data-bind="attr: { href: '#movies/edit/' + movieToShow.id }">Edit</a>-->
+                    <a class="btn btn-success" data-bind="attr: { href: '#movies/index' }">Return to Index</a>
+                </p>
+            </div>
+        </div>
+</div>
